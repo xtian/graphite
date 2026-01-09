@@ -83,9 +83,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [L_MEDIA ] = LAYOUT_moonlander(
     AU_TOGG, _______, _______, _______, _______, _______, _______,         _______, _______, _______, _______, _______, _______, QK_BOOT,
-    MU_TOGG, _______, KC_BTN1, KC_MS_U, KC_BTN2, _______, _______,         _______, _______, _______, _______, KC_UP  , _______, _______, 
-    MU_NEXT, KC_WH_U, KC_MS_L, KC_MS_D, KC_MS_R, _______, _______,         _______, _______, _______, KC_LEFT, KC_DOWN, KC_RGHT, _______,
-    _______, KC_WH_D, _______, _______, _______, _______,                           _______, _______, KC_MPRV, KC_MNXT, _______, _______, 
+    MU_TOGG, _______, MS_BTN1, MS_UP  , MS_BTN2, _______, _______,         _______, _______, _______, _______, KC_UP  , _______, _______,
+    MU_NEXT, MS_WHLU, MS_LEFT, MS_DOWN, MS_RGHT, _______, _______,         _______, _______, _______, KC_LEFT, KC_DOWN, KC_RGHT, _______,
+    _______, MS_WHLD, _______, _______, _______, _______,                           _______, _______, KC_MPRV, KC_MNXT, _______, _______,
     _______, _______, _______, _______, _______,          _______,         _______,          KC_VOLU, KC_VOLD, KC_MUTE, _______, _______,
                                         _______, KC_WBAK, _______,         _______, _______, KC_MPLY
   ),
@@ -118,12 +118,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 
   [L_NUMPAD] = LAYOUT_moonlander(
-    RGB_TOG, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,         XXXXXXX, XXXXXXX, KC_NUM, KC_PSLS, KC_PAST, KC_PMNS, XXXXXXX, 
-    XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,         XXXXXXX, XXXXXXX, KC_P7 , KC_P8  , KC_P9  , KC_PPLS, XXXXXXX, 
+    RM_TOGG, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,         XXXXXXX, XXXXXXX, KC_NUM, KC_PSLS, KC_PAST, KC_PMNS, XXXXXXX,
+    XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,         XXXXXXX, XXXXXXX, KC_P7 , KC_P8  , KC_P9  , KC_PPLS, XXXXXXX,
     XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, _______,         XXXXXXX, XXXXXXX, KC_P4 , KC_P5  , KC_P6  , KC_PCMM, XXXXXXX,
-    XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                           XXXXXXX, KC_P1 , KC_P2  , KC_P3  , KC_PEQL, _______, 
-    _______, XXXXXXX, _______, XXXXXXX, XXXXXXX,          RGB_MOD,         RGB_TOG,          KC_P0 , KC_PDOT, KC_PENT, XXXXXXX, _______, 
-                                        RGB_VAD, RGB_VAI, RGB_SAD,         RGB_SAI, RGB_HUD, RGB_HUI
+    XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                           XXXXXXX, KC_P1 , KC_P2  , KC_P3  , KC_PEQL, _______,
+    _______, XXXXXXX, _______, XXXXXXX, XXXXXXX,          RM_NEXT,         RM_TOGG,          KC_P0 , KC_PDOT, KC_PENT, XXXXXXX, _______,
+                                        RM_VALD, RM_VALU, RM_SATD,         RM_SATU, RM_HUED, RM_HUEU
   )
 };
 // clang-format on
