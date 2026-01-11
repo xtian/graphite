@@ -132,6 +132,8 @@ extern rgb_config_t rgb_matrix_config;
 
 void keyboard_post_init_user(void) {
     rgb_matrix_enable();
+    rgb_matrix_mode(RGB_MATRIX_SOLID_COLOR);
+    rgb_matrix_sethsv(0, 255, 255);
 }
 
 uint16_t get_alt_repeat_key_keycode_user(uint16_t keycode, uint8_t mods) {
